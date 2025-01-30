@@ -27,6 +27,7 @@ namespace HDE
         int get_sock();
         int get_connection();
         // Setter Function Section
+        void set_connection(int const);
     };
 }
 

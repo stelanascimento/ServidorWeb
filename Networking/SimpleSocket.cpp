@@ -39,3 +39,9 @@ int HDE::SimpleSocket::get_connection()
 {
     return connection; // retorna o status da conexao
 }
+
+// Setter Function
+void HDE::SimpleSocket::set_connection(int con)
+{
+    connection = con;
+}
