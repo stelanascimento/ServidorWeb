@@ -11,9 +11,6 @@ HDE::SimpleSocket::SimpleSocket(int domain, int service, int protocol, int port,
     // Establish Socket -conection
     sock = socket(domain, service, protocol);
     test_connection(sock); // Test the socket
-    // Establish  network connection
-    connection = connect_to_network(sock, address); // is going to call bind or connect
-    test_connection(connection);
 }
 
 // The test connection virtual Function
@@ -27,18 +24,18 @@ void HDE::SimpleSocket::test_connection(int item_to_test)
     }
 }
 
-// Getter functions
+// Getter functions, os seguintes métodos retronam informações do socket
 struct sockaddr_in HDE::SimpleSocket::get_address()
 {
-    return address;
+    return address; // retorna a estrutura sockaddr_in contendo os detalhes do endereco.
 }
 
 int HDE::SimpleSocket::get_sock()
 {
-    return sock;
+    return sock; // retorna o identificador do socket
 }
 
 int HDE::SimpleSocket::get_connection()
 {
-    return connection;
+    return connection; // retorna o status da conexao
 }
