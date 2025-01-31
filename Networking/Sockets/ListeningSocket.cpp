@@ -20,13 +20,13 @@ void HDE::ListeningSocket::start_listening()
     listening = listen(get_sock(), backlog);
 }
 
-// Getters
-int HDE::ListeningSocket::get_listening()
-{
-    return listening;
-}
+// // Getters
+// int HDE::ListeningSocket::get_listening()
+// {
+//     return listening;
+// }
 
-int HDE::ListeningSocket::get_backlog()
-{
-    return backlog;
-}
+// int HDE::ListeningSocket::get_backlog()
+// {
+//     return backlog;
+// }

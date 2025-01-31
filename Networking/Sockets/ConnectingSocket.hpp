@@ -1,6 +1,6 @@
 // This class implements a call to the connect function of sockets as a definition to the connect_to_network virtual function from SimpleSocket.
 
-#ifndef ConnectingSicket_hpp
+#ifndef ConnectingSocket_hpp
 #define ConnectingSocket_hpp
 
 #include <stdio.h>

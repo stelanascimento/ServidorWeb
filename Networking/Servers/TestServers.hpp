@@ -10,9 +10,8 @@ namespace HDE
     class TestServer : public SimpleServer
     {
     private:
-        char buffer[30000] = {0};
+        char buffer[30000];
         int new_socket;
-
         void accepter();
         void handler();
         void responder();
